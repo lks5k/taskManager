@@ -8,7 +8,7 @@ body {
 }
 
 #contenedor {
-  background-color: white;
+  background-color: rgb(8, 122, 197);
   width: 100%;
   max-width: 600px;
   padding: 32px;
@@ -24,7 +24,7 @@ h1 {
 
 #contador {
   font-size: 15px;
-  color: #555;
+  color: #555555;
   margin: 0 0 24px 0;
 }
 
