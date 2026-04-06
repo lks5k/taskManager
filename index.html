@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <div id="contenedor">
+
+    <h1>📝 Task Manager</h1>
+
+    <p id="contador">
+      <span id="completadas">0</span> de <span id="total">0</span> tareas completadas
+    </p>
+
+    <div id="formulario">
+
+      <input type="text" id="inputTarea" placeholder="Escribe una tarea...">
+
+      <select id="selectCategoria" onchange="mostrarOtraCategoria()">
+        <option value="">-- Elige categoría --</option>
+        <option value="💼 Trabajo">💼 Trabajo</option>
+        <option value="📚 Estudio">📚 Estudio</option>
+        <option value="🏠 Personal">🏠 Personal</option>
+        <option value="🔴 Urgente">🔴 Urgente</option>
+        <option value="otra">Otra...</option>
+      </select>
+
+      <input type="text" id="inputOtra" placeholder="Escribe tu categoría..." style="display:none">
+
+      <span id="mensajeError" class="error"></span>
+
+      <button onclick="agregarTarea()">Agregar tarea</button>
+
+      <button id="btnLimpiar">🧹 Limpiar completadas</button>
+
+    </div>
+
+    <ul id="listaTareas"></ul>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
